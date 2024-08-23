@@ -19,11 +19,11 @@ public class PlayerController : MonoBehaviour
 
     // ------ Gameplay
     // --- Player
-    private int currentLevel = 5;
+    private int currentLevel = 1;
     private int maxLevel = 5;
     private float currentExp = 0;
     private float maxExp = 20;
-    private float currentMoney = 9999999;
+    private float currentMoney = 0;
     private float maxMoney = 99999999;
 
     // --- Coffee
@@ -199,22 +199,22 @@ public class PlayerController : MonoBehaviour
         switch (currentLevel)
         {
             case 1: 
-                maxExp = 100;
+                maxExp = 100; //100
                 break;
             case 2: 
-                maxExp = 500;
+                maxExp = 500; //500
                 break;
             case 3: 
-                maxExp = 1200;
+                maxExp = 1200;//1200
                 break;
             case 4: 
-                maxExp = 2500;
+                maxExp = 2500;//2500
                 break;
             case 5: 
-                maxExp = 5000;
+                maxExp = 5000;//5000
                 break;
             default:
-                maxExp = 100;
+                maxExp = 100;//100
                 break;
         }
         if(gamePlayManager){
